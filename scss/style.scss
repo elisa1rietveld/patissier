@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: Poppins;
 }
 
 .header {
@@ -53,6 +54,11 @@ body {
     width: 100%;
     text-align: center;
     background-color: antiquewhite;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px; 
+    line-height: 25px;
+    border-radius: 4px;
 
     li {
         list-style: none;
@@ -61,10 +67,3 @@ body {
     }
     
 }
-
-.footerdiv a:hover {
-    background-color: rgba(198, 172, 139, 0.545);
-    color: rgb(100, 82, 50);
-    padding: 10px;
-    border-radius: 5px;
-  }

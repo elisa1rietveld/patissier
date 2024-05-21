@@ -15,9 +15,9 @@
 <div class="header">
   <a href="#" class="logo">Patissier opleiding</a>
   <div class="header-right">
-    <a href="index.html">Home</a>
-    <a href="info.html">Informatie</a>
-    <a href="form.html">Inschrijven</a>
+    <a href="index.php">Home</a>
+    <a href="info.php">Informatie</a>
+    <a href="form.php">Inschrijven</a>
   </div>
 </div>
  

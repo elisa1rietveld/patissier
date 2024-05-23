@@ -1,0 +1,102 @@
+/*# sourceMappingURL=form.css.map */
+
+$background-color: #ffe9b2;
+$font-family: Arial, sans-serif;
+$form-background-color: #fff;
+$form-max-width: 600px;
+$form-padding: 20px;
+$form-border-radius: 10px;
+$form-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+$input-border: 1px solid #ccc;
+$input-border-radius: 5px;
+$input-padding: 10px;
+$input-font-size: 16px;
+$submit-background-color: #333;
+$submit-color: #fff;
+$submit-padding: 10px 20px;
+$submit-border-radius: 5px;
+$submit-hover-background-color: #555;
+
+body {
+    background-color: $background-color; /* Beige achtergrond */
+    font-family: $font-family;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden; /* Prevent body from scrolling */
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto; /* Enable vertical scrolling if content overflows */
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    background-color: $form-background-color;
+    padding: $form-padding;
+    border-radius: $form-border-radius;
+    box-shadow: $form-box-shadow;
+    max-width: $form-max-width;
+    width: 100%;
+    max-height: 100%; /* Make sure form does not exceed viewport height */
+    overflow-y: auto; /* Enable vertical scrolling within the form */
+}
+
+fieldset {
+    border: none;
+    margin-bottom: 15px;
+}
+
+legend {
+    font-weight: bold;
+    color: #444;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="email"],
+input[type="tel"],
+input[type="file"],
+select,
+textarea {
+    width: calc(100% - 22px);
+    padding: $input-padding;
+    margin-bottom: 15px;
+    border: $input-border;
+    border-radius: $input-border-radius;
+    font-size: $input-font-size;
+}
+
+input[type="submit"] {
+    background-color: $submit-background-color;
+    color: $submit-color;
+    padding: $submit-padding;
+    border: none;
+    border-radius: $submit-border-radius;
+    cursor: pointer;
+    font-size: 16px;
+
+    &:hover {
+        background-color: $submit-hover-background-color;
+    }
+}

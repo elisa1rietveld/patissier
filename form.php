@@ -1,5 +1,9 @@
 <?php
 include_once "headercontact.php"
+/*
+verwijder dit als je er last van hebt!!
+wel aub weer toevoegen als je gaat pushen :)
+*/
 ?>
 
 <!DOCTYPE html>

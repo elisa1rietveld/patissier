@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #ffe9b2; 
+}
+header {
+    background: url('https://formation-orientation.com/wp-content/uploads/decouverte-patissier.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+.container {
+    padding: 20px;
+}
+.intro {
+    font-size: 1em; 
+    margin-bottom: 20px;
+    background-color: #ffffff; 
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: left;
+}
+h2 {
+    color: #333;
+    font-size: 1.5em;
+    cursor: pointer;
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h2 .toggle-icon {
+    margin-right: 10px;
+    font-size: 1.2em;
+    transition: transform 0.3s ease; 
+}
+h2.collapsed .toggle-icon {
+    transform: rotate(45deg); 
+}
+.content {
+    overflow: hidden;
+    transition: max-height 0.3s ease; 
+    max-height: 0;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    margin-top: 10px;
+}
+ul {
+    margin: 10px 0;
+    padding-left: 20px;
+}
+@media (min-width: 768px) {
+    header h1 {
+        font-size: 3.5em;
+    }
+    .intro {
+        font-size: 1.2em; 
+    }
+    h2 {
+        font-size: 1.75em;
+    }
+}
+

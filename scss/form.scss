@@ -18,6 +18,7 @@ $submit-border-radius: 5px;
 $submit-hover-background-color: #555;
 
 body {
+    main {
     background-color: $background-color; /* Beige achtergrond */
     font-family: $font-family;
     margin: 0;
@@ -27,6 +28,7 @@ body {
     align-items: center;
     height: 100vh;
     overflow: hidden; /* Prevent body from scrolling */
+    }
 }
 
 .container {

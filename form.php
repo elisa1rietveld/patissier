@@ -1,3 +1,7 @@
+<?php
+include_once "headercontact.php"
+?>
+
 <!DOCTYPE html>
 <html lang="nl">
 
@@ -15,6 +19,7 @@
 </head>
 
 <body>
+    <main>
     <form action="/verzend-inschrijving" method="post" enctype="multipart/form-data">
         <h1>Inschrijven voor de Patisserieopleiding</h1>
         <fieldset>
@@ -80,6 +85,7 @@
 
         <input type="submit" value="Inschrijven">
     </form>
+</main>
 </body>
 
 </html>

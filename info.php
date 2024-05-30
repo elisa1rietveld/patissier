@@ -21,7 +21,7 @@ wel aub weer toevoegen als je gaat pushen :)
     </header>
     <div class="container">
         <div class="intro">
-            Een patissier opleiding bereidt je voor op een creatieve en uitdagende carrière in de wereld van desserts en gebak. Hier ontdek je alles wat je moet weten over deze opleiding, inclusief de vaardigheden die je zult leren, de toelatingsvereisten, de structuur van de opleiding en de carrièremogelijkheden na het afronden van de cursus.
+            Een patissier opleiding<br> bereidt je voor op een creatieve en uitdagende <br> carrière in de wereld van desserts en gebak. Hier ontdek je alles<br> wat je moet weten over deze opleiding, inclusief de vaardigheden die je zult<br> leren, de toelatingsvereisten, de structuur van de opleiding en <br>de carrièremogelijkheden na het afronden van de cursus.
         </div>
         
         <h2 onclick="toggleContent('vaardigheden')" class="collapsed">

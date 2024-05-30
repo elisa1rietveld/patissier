@@ -23,6 +23,32 @@ wel aub weer toevoegen als je gaat pushen :)
   fotos van een patissier. (patissier is de naam van de bakker btw, niet patissiere.)
 -->
 
+<!-- "slideshow-container">
+        <div class="mySlides fade">
+            <img src="https://i.imgur.com/eQkmHx9.jpg" style="width: 100vw;height: 100vh">
+
+        </div>
+        <div class="mySlides fade">
+
+            <img src="https://i.imgur.com/QtMelqo.jpg" style="width: 100vw;height: 100vh">
+
+        </div>
+        <div class="mySlides fade">
+
+            <img src="https://i.imgur.com/IO2tBwy.jpg" style="width: 100vw;height: 100vh">
+
+        </div>
+        <div style="text-align:center; margin:-5vh;">
+
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+
+        </div>
+        <a class="prev" onclick="prevSlide()">&#10094;</a>
+        <a class="next" onclick="showSlides()">&#10095;</a>
+    </div>
+-->
 <!-- Content -->
 <div class="pagecontent">
  <div class="container">
@@ -36,6 +62,67 @@ wel aub weer toevoegen als je gaat pushen :)
      Div 3
    </div>
  </div>
+
+<script>
+var timeOut = 2000;
+        var slideIndex = 0;
+        var autoOn = true;
+
+        autoSlides();
+
+        function autoSlides() {
+            timeOut = timeOut - 20;
+
+            if (autoOn == true && timeOut < 0) {
+                showSlides();
+            }
+            setTimeout(autoSlides, 20);
+        }
+
+        function prevSlide() {
+
+            timeOut = 2000;
+
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slideIndex--;
+
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            if (slideIndex == 0) {
+                slideIndex = 3
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+
+        function showSlides() {
+
+            timeOut = 2000;
+
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slideIndex++;
+
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+
+</script>
 
 </body>
 </html>

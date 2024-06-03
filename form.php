@@ -1,5 +1,5 @@
 <?php
-include_once "headercontact.php"
+include_once "header.php"
 /*
 verwijder dit als je er last van hebt!!
 wel aub weer toevoegen als je gaat pushen :)
@@ -90,6 +90,10 @@ wel aub weer toevoegen als je gaat pushen :)
         <input type="submit" value="Inschrijven">
     </form>
 </main>
+
+<?php
+include_once "footer.php"
+?>
 </body>
 
 </html>

@@ -1,5 +1,5 @@
 <?php
-include_once "headercontact.php"
+include_once "header.php"
 /*
 verwijder dit als je er last van hebt!!
 wel aub weer toevoegen als je gaat pushen :)
@@ -68,5 +68,9 @@ wel aub weer toevoegen als je gaat pushen :)
             content.previousElementSibling.classList.toggle('collapsed');
         }
     </script>
+
+<?php
+include_once "footer.php"
+?>
 </body>
 </html>

@@ -8,7 +8,6 @@
     font-size: 18px;
     color: rgb(47, 40, 20);
     line-height: 25px;
-    z-index: 4;
     clear: both;
   }
   
@@ -33,3 +32,13 @@
     margin: 5px 0 0 0;
     font-size: 14px;
   }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #ffe9b2;
+    font-size: 18px;
+    color: rgb(47, 40, 20);
+    text-align: center;
+}

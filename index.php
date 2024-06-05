@@ -1,10 +1,11 @@
 <?php
-include_once "header.php";
+include_once "header.php"
 /*
 verwijder dit als je er last van hebt!!
 wel aub weer toevoegen als je gaat pushen :)
 */
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,19 +15,16 @@ wel aub weer toevoegen als je gaat pushen :)
     <title>Document</title>
 </head>
 <body>
-
-<main>
 <div class="image-container">
-    <img src="img/Screenshot 2024-05-21 105857.png" alt="">
+    <img src="" alt="">
     <div class="pagecontent">
-        <div class="container">
+          <div class="container">
             <div class="box">Div 1</div>
             <div class="box">Div 2</div>
             <div class="box">Div 3</div>
-        </div>
+         </div>
     </div>
 </div>
-</main>
 
 <?php
 include_once "footer.php"

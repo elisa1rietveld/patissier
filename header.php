@@ -12,7 +12,9 @@
 <body>
 
 <div class="header">
-  <a href="#" class="logo">Patissier opleiding</a>
+  <a href="#" class="logo">
+    <img src="img/placeholder.jpg" alt="">
+  </a>
   <div class="header-right">
     <a href="index.php">Home</a>
     <a href="info.php">Informatie</a>

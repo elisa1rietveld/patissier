@@ -1,50 +1,127 @@
-body {
+html, body {
   margin: 0;
   padding: 0;
-  font-family: Poppins, sans-serif;
+  height: 100%;
+  overflow: hidden;
 }
 
+body {
+  font-family: Arial, sans-serif;
+}
 
-.pagecontent {
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.slideshow {
+  position: absolute;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.container {
-  position: absolute;
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
-  max-width: 1200px;
-  margin: 0 auto;
-  flex-wrap: wrap;
-}
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
 
-.box {
-  margin: 10px;
-  padding: 20px;
-  text-align: center;
-  box-sizing: border-box;
-  background-color: #fff4da;
-  border-radius: 5px;
-  flex: 1 1 300px; 
-}
+  img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
 
-@media screen and (max-width: 768px) {
-  .box {
-    flex-basis: calc(50% - 20px); 
+    &.active {
+      opacity: 1;
+    }
   }
 }
 
-@media screen and (max-width: 500px) {
-  .box {
-    flex-basis: 100%; 
+.pagecontent {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  padding: 10px;
+  color: white;
+  font-size: 1.2em;
+  text-align: center;
+  border-radius: 5px;
+  position: relative;
+  transition: background-color 0.3s ease;
+
+  .icon {
+    margin-right: 10px;
+
+    img {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  &.open-dagen {
+    background-color: #ffe9b2;
+    color: #000;
+
+    &:hover {
+      background-color: darken(#ffe9b2, 10%);
+    }
+  }
+
+  &.opleidingen {
+    background-color: #ffe9b2;
+    color: #000;
+
+    &:hover {
+      background-color: darken(#ffe9b2, 10%);
+    }
+  }
+
+  &::after {
+    content: '\2192';
+    position: absolute;
+    right: 10px;
+    font-size: 1.5em;
+  }
+}
+
+.google-maps {
+  width: 25%;
+  height: 200px;
+  position: relative;
+  margin-bottom: 20px;
+
+  .location-text {
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ffe9b2;
+    color: #000;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+
+  iframe {
+    width: 100%;
+    height: calc(100% - 40px);
+    border-radius: 5px;
   }
 }

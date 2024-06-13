@@ -3,44 +3,48 @@
 $transition-duration: 1s;
 $slide-interval: 5s;
 
-body {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    overflow: hidden;
-    position: relative;
-}
+// body {
+// 	margin: 0;
+// 	padding: 0;
+// 	height: 100vh;
+// 	overflow: hidden;
+// 	position: relative;
+// }
 
 .image-container {
-    position: relative;
-    width: 100%;
-    height: 100%;
+	position: relative;
+	width: 100%;
+	height: 90vh;
 }
 
 .slideshow {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1; // Zorg ervoor dat de slideshow achter de inhoud staat
-    overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1; // Zorg ervoor dat de slideshow achter de inhoud staat
+	overflow: hidden;
 
-    img {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        opacity: 0;
-        transition: opacity $transition-duration ease-in-out;
+	img {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		opacity: 0;
+		transition: opacity $transition-duration ease-in-out;
 
-        &.active {
-            opacity: 1;
-        }
-    }
+		&.active {
+			opacity: 1;
+		}
+	}
 }
 
 .pagecontent {
-    position: relative;
-    z-index: 1; // Zorg ervoor dat de inhoud voor de slideshow staat
+	position: relative;
+	z-index: 1; // Zorg ervoor dat de inhoud voor de slideshow staat
+	display: flex;
+	justify-content: center;
+	align-items: end;
+	height: 100%;
 }

@@ -1,0 +1,54 @@
+nav {
+	position: relative;
+	z-index: 5;
+	height: 10vh;
+	overflow: hidden;
+	background-color: #ffe9b2;
+	padding: 10px 30px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	a {
+		float: left;
+		color: rgb(47, 40, 20);
+		text-align: center;
+		padding: 12px;
+		text-decoration: none;
+		font-size: 18px;
+		line-height: 25px;
+		transition: all 0.25s ease;
+	}
+
+	a.logo {
+		img {
+			width: 115px;
+			height: 65px;
+		}
+	}
+
+	a:hover {
+		background-color: rgba(198, 172, 139, 0.284);
+		color: rgb(70, 57, 35);
+		border-radius: 5%;
+	}
+
+	.nav-right {
+		display: flex;
+		gap: 3rem;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	nav {
+		a {
+			float: none;
+			display: block;
+			text-align: left;
+		}
+
+		.nav-right {
+			float: none;
+		}
+	}
+}

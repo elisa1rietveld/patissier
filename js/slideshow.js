@@ -1,5 +1,6 @@
 // slideshow.js
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function ()
+{
     const images = [
         '../img/foto1.jpg',
         '../img/foto2.jpg',
@@ -10,7 +11,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
     const slideshowContainer = document.querySelector('.slideshow');
 
-    images.forEach((src, index) => {
+    images.forEach((src, index) =>
+    {
         const img = document.createElement('img');
         img.src = src;
         if (index === 0) img.classList.add('active');
@@ -18,11 +20,12 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     let currentIndex = 0;
-    setInterval(() => {
-        const currentImage = slideshowContainer.querySelectorAll('img')[currentIndex];
+    setInterval(() =>
+    {
+        const currentImage = slideshowContainer.querySelectorAll('img')[ currentIndex ];
         currentImage.classList.remove('active');
         currentIndex = (currentIndex + 1) % images.length;
-        const nextImage = slideshowContainer.querySelectorAll('img')[currentIndex];
+        const nextImage = slideshowContainer.querySelectorAll('img')[ currentIndex ];
         nextImage.classList.add('active');
     }, 5000); // Change image every 5 seconds
 });

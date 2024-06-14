@@ -1,6 +1,6 @@
 <nav>
     <a href="#" class="logo">
-        <img src="img/placeholder.jpg" alt="">
+        <img src="img/pattilogo.png" alt="">
     </a>
     <div class="nav-right">
         <a href="index.php">Home</a>

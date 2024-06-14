@@ -23,7 +23,9 @@ include_once "header.php"
                     <div class="text">Open Dagen & voorlichting</div>
                 </div>
                 <div class="box opleidingen">
-                    <div class="text">Opleidingen</div>
+                    <div class="text link"><a href="https://www.mboutrecht.nl/opleidingen/"
+                            target="_blank">Opleidingen</a>
+                    </div>
                 </div>
                 <div class="box opleidingen">
                     <div class="text">Zamazingo</div>

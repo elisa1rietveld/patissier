@@ -31,6 +31,19 @@ body {
 		background-size: cover;
 		filter: blur(2px) brightness(0.6);
 	}
+
+	.bg2 {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-repeat: repeat;
+		background-position: center;
+		background-image: url("../img/contactbg.png") !important;
+		filter: blur(2px) brightness(0.6);
+	}
+
 	main {
 		position: relative;
 		z-index: 2;
@@ -101,6 +114,10 @@ textarea {
 	border: $input-border;
 	border-radius: $input-border-radius;
 	font-size: $input-font-size;
+}
+
+textarea {
+	resize: vertical;
 }
 
 input[type="submit"] {

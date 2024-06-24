@@ -17,7 +17,6 @@ wel aub weer toevoegen als je gaat pushen :)
         <form action="/verzend-inschrijving" method="post" enctype="multipart/form-data">
             <h1>Inschrijven voor de Patisserieopleiding</h1>
 
-            <!-- if param status success then h2 YES -->
             <?php if (isset($_GET['status']) && $_GET['status'] == 'success') : ?>
                 <p class="success">Je inschrijving is succesvol verstuurd!</p>
             <?php endif; ?>

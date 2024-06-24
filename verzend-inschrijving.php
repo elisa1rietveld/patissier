@@ -1,17 +1,6 @@
 <?php
-// Database connection
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "patisserie_enrollment";
 
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
+include_once "db/db.php";
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $voornaam = $_POST['voornaam'];
@@ -48,7 +37,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         if ($stmt->execute()) {
             echo "New record created successfully";
-            // Redirect to thank you page
             header('Location: form.php?status=success');
         } else {
             echo "Error: " . $stmt->error;

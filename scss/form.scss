@@ -116,3 +116,12 @@ input[type="submit"] {
 		background-color: $submit-hover-background-color;
 	}
 }
+
+.success {
+	background-color: #13d323;
+	color: #fff;
+	padding: 10px;
+	margin: 20px auto;
+	border-radius: 5px;
+	text-align: center;
+}

@@ -48,6 +48,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         if ($stmt->execute()) {
             echo "New record created successfully";
+            // Redirect to thank you page
+            header('Location: form.php?status=success');
         } else {
             echo "Error: " . $stmt->error;
         }
@@ -57,4 +59,3 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 }
 
 $conn->close();
-?>
